@@ -1,0 +1,27 @@
+{
+  "name": "venta-computadoras-mongodb",
+  "version": "1.0.0",
+  "description": "API REST académica para venta de computadoras y componentes con MongoDB",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "db:init": "node database/init.js",
+    "db:seed": "node database/seed.js",
+    "db:queries": "node database/consultas.js",
+    "test": "jest --runInBand"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "mongodb": "^6.12.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
